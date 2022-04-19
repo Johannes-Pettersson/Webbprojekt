@@ -1,8 +1,39 @@
-
-.red{
-    background-color: #CC0028;
+p{
+    color:black;
 }
 
-.white{
+nav{
+    height:60px;
+    background-color: #cc0028;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: inherit;
+}
+nav ul li {
+    display: inline;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+.navlink{
+    text-decoration: none;
+    display: block;
     color:white;
+    height: inherit;
+
+}
+
+.navlink:hover{
+    text-decoration: none;
+    color:white;  
 }
