@@ -1,14 +1,14 @@
 $(document).ready(function(){
     
     $(".navlink").mouseenter(function(){
-        hoverEnter(this);
+        hoverEnterEffect(this);
     });
 
     $(".navlink").mouseleave(function(){
-        hoverLeave(this);
+        hoverLeaveEffect(this);
     });
 
-    function hoverEnter(el){
+    function hoverEnterEffect(el){
         anime({
             targets: el,
             scale: 1.1,
@@ -17,7 +17,7 @@ $(document).ready(function(){
           });
     }
 
-    function hoverLeave(el){
+    function hoverLeaveEffect(el){
         anime({
             targets: el,
             scale: 1.0,
@@ -26,6 +26,14 @@ $(document).ready(function(){
           });
     }
 
+    $('img').click(function(){
+        anime({
+            targets:this,
+            easing: 'easeInOutQuad',
+            duration: '500',
+            width: '10em'
+        });
+    });
 
 
 });
