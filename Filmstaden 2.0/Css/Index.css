@@ -5,13 +5,37 @@ body{
 
 
 .contaner{
-    width: 60%;
-    height: 1000px;
+    width: 55%;
     margin:auto;
     border:3px solid white;
+    overflow:hidden;
 }
 
+.contaner h2{
+    margin: .5em .3em;
+}
 
+.slideshow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slideshow img{
+    border-radius: 0.4em;
+    width: 19.5%;
+}
+
+.slideshowControlls{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slideshowControlls a{
+    padding:1em
+}
 
 nav{
     height:60px;

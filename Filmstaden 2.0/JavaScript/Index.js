@@ -1,10 +1,10 @@
 $(document).ready(function(){
     
-    $(".navlink").mouseenter(function(){
+    $(".hover").mouseenter(function(){
         hoverEnterEffect(this);
     });
 
-    $(".navlink").mouseleave(function(){
+    $(".hover").mouseleave(function(){
         hoverLeaveEffect(this);
     });
 
@@ -26,14 +26,20 @@ $(document).ready(function(){
           });
     }
 
+
+
+
+    /*
     $('img').click(function(){
+        if(this.parentNode.tagName != "A"){
         anime({
             targets:this,
             easing: 'easeInOutQuad',
             duration: '500',
             width: '10em'
         });
+    }
     });
-
+*/
 
 });
