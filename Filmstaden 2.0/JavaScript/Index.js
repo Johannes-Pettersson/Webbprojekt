@@ -228,6 +228,14 @@ $(document).ready(function(){
         }
     });
 
+
+    $('#menubutton').click(function(e){
+        e.preventDefault();
+
+        
+    });
+
+
     /*
     $('img').click(function(){
         if(this.parentNode.tagName != "A"){
