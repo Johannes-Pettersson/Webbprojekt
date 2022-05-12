@@ -228,25 +228,23 @@ $(document).ready(function(){
         }
     });
 
+    let showingSideMenu = false;
 
     $('#menubutton').click(function(e){
-        e.preventDefault();
 
+        //detta för att inte sidan ska refreshas när man klickar på menyknappen
+        e.preventDefault();
+        
+        if(showingSideMenu){
+            //dölj sidomenyn
+              $('.sidemenu').addClass('hidden');
+              showingSideMenu = false;
+        }else{
+            //visa sidomeyn
+            $('.sidemenu').removeClass('hidden');
+            showingSideMenu = true;
+        }
         
     });
-
-
-    /*
-    $('img').click(function(){
-        if(this.parentNode.tagName != "A"){
-        anime({
-            targets:this,
-            easing: 'easeInOutQuad',
-            duration: '500',
-            width: '10em'
-        });
-    }
-    });
-*/
 
 });
