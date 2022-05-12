@@ -107,6 +107,60 @@ footer{
     align-items: center;
 }
 
+footer ul{
+    list-style-type: none;
+    display: flex;
+    padding:0;
+}
+
+footer ul li{
+    padding: 10px;
+}
+
+footer ul li:nth-last-child(1){
+    border:none;
+}
+    
+footer ul li ul{
+    display:flex;
+    flex-direction: column;
+    margin:0;
+    width: 100%;
+
+}
+
+    
+footer ul li ul li{
+    padding: 0px;
+    border: none;
+    padding:0.2em;
+}
+
+footer ul li ul li a{
+    color:grey;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+footer ul li ul li a:hover{
+    color:grey;
+    text-decoration: underline;
+}
+
+h2{
+    margin:0;
+    font-family: sans-serif;
+    margin-bottom: 0.1em;
+    color:white;
+}
+
+    
+.hidden{
+    display:none;
+}
+
+
+
 
 
 
@@ -153,64 +207,31 @@ footer{
         list-style-type: none;
         flex-direction: column;
         width: 80%;
-        display: flex;
-        padding:0;
         box-sizing: border-box;
     }
     
     footer ul li{
         border-bottom: 1px solid #2B2C2C;
-        padding: 10px;
     }
-    
-    footer ul li:nth-last-child(1){
-        border:none;
-    }
-    
-    footer ul li ul{
-        display:flex;
-        flex-direction: column;
-        margin:0;
-        width: 100%;
 
-    }
+
     
     footer ul li ul li{
-        padding: 0px;
-        border: none;
-        padding:0.2em;
         text-align: center;
     }
     
-    footer ul li ul li a{
-        color:grey;
-        text-decoration: none;
-        font-family: monospace;
-    }
-    
-    footer ul li ul li a:hover{
-        color:grey;
-        text-decoration: underline;
-    }
-    
+
+
     
     h2{
-        margin:0;
-        font-family: sans-serif;
-        margin-bottom: 0.1em;
-        color:white;
         text-align: center;
-
     }
 
     .hider{
         display: none;
     }
     
-    
-    .hidden{
-        display:none;
-    }
+
 }
 
 
@@ -255,55 +276,22 @@ footer{
     
 
     footer ul{
-        list-style-type: none;
         flex-direction: column;
         width: 60%;
-        display: flex;
-        padding:0;
     }
     
     footer ul li{
-
         border-bottom: 1px solid #2B2C2C;
-        padding: 10px;
     }
     
-    footer ul li:nth-last-child(1){
-        border:none;
-    }
-    
-    footer ul li ul{
-        display:flex;
-        flex-direction: column;
-        margin:0;
-        width: 100%;
-    }
+
     
     footer ul li ul li{
-
-        padding: 0px;
-        border: none;
-        padding:0.2em;
         text-align: center;
     }
     
-    footer ul li ul li a{
-        color:grey;
-        text-decoration: none;
-        font-family: monospace;
-    }
-    
-    footer ul li ul li a:hover{
-        color:grey;
-        text-decoration: underline;
-    }
-    
-    
+
     h2{
-        margin:0;
-        font-family: sans-serif;
-        margin-bottom: 0.1em;
-        color:white;
         text-align: center;
     }
 
@@ -311,10 +299,7 @@ footer{
         display: none;
     }
     
-    
-    .hidden{
-        display:none;
-    }
+
 }
 
 
@@ -357,55 +342,26 @@ footer{
         padding-left: 2em;
     }
 
+
+
+
     footer ul{
-        list-style-type: none;
         width: 60%;
-        display: flex;
-        padding:0;
     }
     
     footer ul li{
         width: 25%;
         border-right: 1px solid #2B2C2C;
-        padding: 10px;
     }
     
-    footer ul li:nth-last-child(1){
-        border:none;
-    }
-    
-    footer ul li ul{
-        display:flex;
-        flex-direction: column;
-        margin:0;
-        width: 100%;
-    }
+
+
     
     footer ul li ul li{
         width:100%;
-        padding: 0px;
-        border: none;
-        padding:0.2em;
     }
     
-    footer ul li ul li a{
-        color:grey;
-        text-decoration: none;
-        font-family: monospace;
-    }
-    
-    footer ul li ul li a:hover{
-        color:grey;
-        text-decoration: underline;
-    }
-    
-    
-    h2{
-        margin:0;
-        font-family: sans-serif;
-        margin-bottom: 0.1em;
-        color:white;
-    } 
+
 
     
     .hider{
@@ -413,9 +369,6 @@ footer{
     }
     
 
-    .hidden{
-        display:none;
-    }
 }
 
 
