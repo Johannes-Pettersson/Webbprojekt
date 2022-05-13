@@ -66,6 +66,7 @@ nav#navbar ul li {
     display: block;
     color:white;
     height: inherit;
+    font-family: 'Boogaloo';
 }
 
 .navlink:hover{
