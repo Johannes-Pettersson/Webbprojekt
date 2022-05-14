@@ -1,13 +1,8 @@
 $(document).ready(function(){
     
-    $(".hover").mouseenter(function(){
-        hoverEnterEffect(this);
-    });
-
-    $(".hover").mouseleave(function(){
-        hoverLeaveEffect(this);
-    });
-
+    
+    //Detta är koden för den hover effect som syns på bland annat texterna i 
+    //nav fältet när man drar sin mus och håller över länken
     function hoverEnterEffect(el){
         anime({
             targets: el,
@@ -17,6 +12,8 @@ $(document).ready(function(){
           });
     }
 
+    //Detta är koden för den hover effect som syns på bland annat texterna i 
+    //nav fältet när man drar bort sin mus från länken
     function hoverLeaveEffect(el){
         anime({
             targets: el,
@@ -25,12 +22,28 @@ $(document).ready(function(){
             elasticity: 300
           });
     }
+    
+    //denna kod kör hover effecten när man håller sin mus över något element som har 
+    //klassen hover på sig
+    $(".hover").mouseenter(function(){
+        hoverEnterEffect(this);
+    });
 
+    $(".hover").mouseleave(function(){
+        hoverLeaveEffect(this);
+    });
+
+
+    /*här nedan följer all kod för de "slideshows" som finns med alla filmerna.
+    Det ända som den igentligen gör är att ta bort och sätta dit klassen "hidden"
+    på de olika slidesen. Läser man koden så bör man förstå vad som händer. 
+    Därför kommenterar jag inte mer än detta*/
     let slider1State = 1;
     let slider2State = 1;
     let slider3State = 1;
     let slider4State = 1;
 
+    //Koden för vad som händer när man klickar på vänsterpilen
     $('.arrowLeft').click(function(e){
 
         e.preventDefault();
@@ -132,6 +145,7 @@ $(document).ready(function(){
         }
     });
 
+    //koden som bestämmer vad som händer när man klickar på högerpilen
     $('.arrowRight').click(function(e){
 
         e.preventDefault();
@@ -228,6 +242,8 @@ $(document).ready(function(){
         }
     });
 
+
+    //Här följer koden för sidomenyn som visas när man klickar på de tre strecken till vänster på nav fältet
     let showingSideMenu = false;
 
     $('#menubutton').click(function(e){
