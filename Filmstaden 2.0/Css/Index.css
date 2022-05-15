@@ -1,3 +1,12 @@
+:root{
+    --nav-bg: #cc0028;
+    --sidemenu-bg: #AC0D26;
+    --sidemenu-hover: #CF2741;
+    --footer-bg: #0E0F0F;
+    --footer-border: #2B2C2C;
+}
+
+
 body{
     background-color: black;
     margin:0;
@@ -38,7 +47,7 @@ nav#navbar{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: #cc0028;
+    background-color: var(--nav-bg);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -78,7 +87,7 @@ nav#navbar ul li {
     display:flex;
     flex-direction: column;
     position: fixed;
-    background-color: #AC0D26;
+    background-color: var(--sidemenu-bg);
     z-index: 99;
 }
 
@@ -95,11 +104,11 @@ nav#navbar ul li {
 }
 
 .sidemenu ul li:hover{
-    background-color: #CF2741;
+    background-color: var(--sidemenu-hover);
 }
 
 footer{
-    background-color: #0E0F0F;
+    background-color: var(--footer-bg);
     padding: 2em;
     display: flex;
     justify-content: center;
@@ -191,7 +200,7 @@ h2{
     }
     
     footer ul li{
-        border-bottom: 1px solid #2B2C2C;
+        border-bottom: 1px solid var(--footer-border);
     }
     
     footer ul li ul li{
@@ -242,7 +251,7 @@ h2{
     }
     
     footer ul li{
-        border-bottom: 1px solid #2B2C2C;
+        border-bottom: 1px solid var(--footer-border);
     }
     
     footer ul li ul li{
@@ -294,7 +303,7 @@ h2{
     
     footer ul li{
         width: 25%;
-        border-right: 1px solid #2B2C2C;
+        border-right: 1px solid var(--footer-border);
     }
     
     footer ul li ul li{
